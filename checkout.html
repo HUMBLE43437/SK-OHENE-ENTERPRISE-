@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complete Your Order — S K OHENE ENTERPRISE</title>
+<meta name="description" content="Enter your delivery details and send your S K OHENE ENTERPRISE order via WhatsApp.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">S K OHENE<span>Enterprise — Luxury Within Reach</span></a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="cart.html" class="cart-link" aria-label="View cart">
+        Cart <span class="cart-count" data-cart-count>0</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="page-hero">
+    <span class="eyebrow">Almost There</span>
+    <h1>Complete Your Order</h1>
+  </div>
+
+  <div class="container" style="max-width: 760px;">
+
+    <div data-checkout-empty style="display:none;" class="empty-state">
+      <h3>Your cart is empty</h3>
+      <p>Add something to your cart before checking out.</p>
+      <a href="shop.html" class="btn btn--primary mt-4">Start Shopping</a>
+    </div>
+
+    <div data-checkout-form-section>
+      <div class="order-review">
+        <h3>Order Summary</h3>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Qty</th><th>Price</th></tr>
+          </thead>
+          <tbody data-order-review-body></tbody>
+        </table>
+        <div class="summary-row summary-row--total">
+          <span>Total</span>
+          <span data-order-review-total>GH₵0</span>
+        </div>
+      </div>
+
+      <form data-checkout-form novalidate>
+        <div class="form-grid">
+          <div class="form-field full">
+            <label for="customer-name">Full Name</label>
+            <input type="text" id="customer-name" name="name" autocomplete="name" required>
+            <span class="field-error" data-error-for="customer-name"></span>
+          </div>
+
+          <div class="form-field full">
+            <label for="customer-phone">Phone Number</label>
+            <input type="tel" id="customer-phone" name="phone" autocomplete="tel" placeholder="e.g. 024 123 4567" required>
+            <span class="field-error" data-error-for="customer-phone"></span>
+          </div>
+
+          <div class="form-field full">
+            <label for="customer-location">Delivery Location (within Accra)</label>
+            <input type="text" id="customer-location" name="location" placeholder="e.g. Kwabenya, Accra" required>
+            <span class="field-error" data-error-for="customer-location"></span>
+          </div>
+
+          <div class="form-field full">
+            <label for="customer-notes">Additional Notes (optional)</label>
+            <textarea id="customer-notes" name="notes" rows="3" placeholder="e.g. Please call before delivery"></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn--whatsapp btn--full mt-4">Send Order via WhatsApp</button>
+        <p class="summary-note text-center">Clicking this button opens WhatsApp with your order details filled in. You confirm and send it to us there — no payment is taken on this website.</p>
+      </form>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">S K OHENE ENTERPRISE</div>
+        <p>Luxury Within Reach. Stylish men's fashion, quality products and accessories at prices that don't break the bank.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html?category=Men%27s%20Clothing">Men's Clothing</a></li>
+          <li><a href="shop.html?category=Caps">Caps</a></li>
+          <li><a href="shop.html?category=Accessories">Accessories</a></li>
+          <li><a href="cart.html">Your Cart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="https://wa.me/233595530424" target="_blank" rel="noopener">WhatsApp: 059 553 0424</a></li>
+          <li>Kwabenya University Junction, Accra</li>
+          <li>TikTok: humble (shop with us)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> S K OHENE ENTERPRISE. All rights reserved.</span>
+      <span>Delivery currently available within Accra, Ghana.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/whatsapp.js"></script>
+<script src="js/main.js"></script>
+<script src="js/checkout-page.js"></script>
+<script>document.querySelector("[data-year]").textContent = new Date().getFullYear();</script>
+</body>
+</html>

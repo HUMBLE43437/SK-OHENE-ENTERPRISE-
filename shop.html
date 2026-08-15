@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop — S K OHENE ENTERPRISE</title>
+<meta name="description" content="Browse men's clothing, caps and accessories from S K OHENE ENTERPRISE. Search, filter and order directly on WhatsApp.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">S K OHENE<span>Enterprise — Luxury Within Reach</span></a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="shop.html" aria-current="page">Shop</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="cart.html" class="cart-link" aria-label="View cart">
+        Cart <span class="cart-count" data-cart-count>0</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="page-hero">
+    <span class="eyebrow">The Collection</span>
+    <h1>Shop All Products</h1>
+  </div>
+
+  <div class="container">
+    <div class="category-pills" data-category-pills></div>
+
+    <div class="toolbar">
+      <div class="toolbar-group search-field">
+        <label for="shop-search" class="visually-hidden">Search products</label>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="search" id="shop-search" class="input" placeholder="Search products…" data-shop-search>
+      </div>
+      <div class="toolbar-group">
+        <label for="shop-sort" class="field-label">Sort by</label>
+        <select id="shop-sort" class="select" data-shop-sort>
+          <option value="default">Featured</option>
+          <option value="newest">Newest</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="name-asc">Name: A–Z</option>
+        </select>
+      </div>
+    </div>
+
+    <p class="field-label" data-results-count style="margin-bottom: 1rem;"></p>
+
+    <div class="product-grid" data-shop-grid></div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">S K OHENE ENTERPRISE</div>
+        <p>Luxury Within Reach. Stylish men's fashion, quality products and accessories at prices that don't break the bank.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html?category=Men%27s%20Clothing">Men's Clothing</a></li>
+          <li><a href="shop.html?category=Caps">Caps</a></li>
+          <li><a href="shop.html?category=Accessories">Accessories</a></li>
+          <li><a href="cart.html">Your Cart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="https://wa.me/233595530424" target="_blank" rel="noopener">WhatsApp: 059 553 0424</a></li>
+          <li>Kwabenya University Junction, Accra</li>
+          <li>TikTok: humble (shop with us)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> S K OHENE ENTERPRISE. All rights reserved.</span>
+      <span>Delivery currently available within Accra, Ghana.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/233595530424" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.9.5 3.66 1.4 5.19L2 22l5.05-1.49a9.86 9.86 0 0 0 4.99 1.35c5.46 0 9.91-4.45 9.91-9.9C21.95 6.45 17.5 2 12.04 2zm5.8 14.13c-.24.68-1.4 1.3-1.94 1.36-.5.06-1.05.28-3.53-.74-2.97-1.22-4.88-4.2-5.03-4.4-.15-.2-1.2-1.6-1.2-3.05 0-1.45.76-2.16 1.03-2.46.27-.3.6-.37.8-.37.2 0 .4 0 .58.01.19.01.44-.07.68.53.25.6.85 2.08.92 2.23.07.15.12.33.02.53-.1.2-.15.32-.3.5-.15.18-.31.4-.44.53-.15.15-.3.31-.13.6.17.3.76 1.26 1.63 2.04 1.12 1 2.06 1.31 2.36 1.46.3.15.47.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.25.66-.15.27.1 1.73.82 2.03.97.3.15.5.22.57.35.08.13.08.75-.16 1.43z"/></svg>
+</a>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/whatsapp.js"></script>
+<script src="js/main.js"></script>
+<script src="js/shop.js"></script>
+<script>document.querySelector("[data-year]").textContent = new Date().getFullYear();</script>
+</body>
+</html>
